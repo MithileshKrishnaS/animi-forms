@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icons">
+    <title>Animi-Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="style.js"></script>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="item1"><img src="lion.svg"></div>
+        <div class="item2"> <p><br>ANIMI FORMS </p></div>
+        <div class="item3"><img src="lion.svg"></div>
+    </div>
+    
+    <div class="main">
+    
+    <div class="main1">
+        <form name="myForm"  onsubmit="return validate()" method="post" action="red.html">
+        <label for="animi-name"><b>Animi-Name &nbsp&nbsp&nbsp <span id="demo"></span> </b></label><br><br>
+        <input type="text" id="animi-name" name="animi-name"><br><br><br>
+        <label for="origin"><b>Animi-(Origin-Country) </b> </label><br><br>
+        <select id="origin" name="origin" > 
+            <option value="india">INDIA</option>
+            <option value="japan">JAPAN</option>
+            <option value="korea">KOREA</option>
+            <option value="usa">USA</option>
+        </select>
+        <br><br><br>
+        <label for="no"><b>No of Episodes<span id="demo1"></span></b></label><br><br>
+        <input type="text" id="no" name="no"><br><br><br>
+        <label for="rating"><b>Your Rating</b></label><br><br>
+        <input type="text" id="rating" name="rating"><br><br><br>
+        <label for="awards"><b>Awards</b></label><br><br>
+        <input type="text" id="awards" name="awards"><br><br><br>
+    </div>
+    <div class="main2">
+        <label for="about"><b>Description About the Anime</b></label><br><br>
+        <textarea id="about" name="about" rows="4" cols="50"></textarea><br><br><br>
+        <input type="submit" value="Submit" id="btn">
+    </form>
+    </div>
+        
+    </div>    
+</body>
+</html>
